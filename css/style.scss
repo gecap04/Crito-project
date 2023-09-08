@@ -267,3 +267,19 @@ header{
 
     }
 }
+
+.sponsor{
+
+    .container{
+        display: none;
+        justify-content: space-around;
+        margin-top: 70px;
+        margin-bottom: 70px;
+
+        @media (min-width: 1000px){
+            display: flex;
+        }
+
+    }
+
+}
