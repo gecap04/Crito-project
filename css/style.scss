@@ -54,6 +54,19 @@ html, body{
 
 }
 
+.section-title{
+    p{
+        color: #F94D1C;
+    }
+
+    h2{
+        color: #191919;
+        font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 45px;
+    }
+}
+
 header{
     background-color: #F0EFE9;
     display: flex;
@@ -274,12 +287,92 @@ header{
         display: none;
         justify-content: space-around;
         margin-top: 70px;
-        margin-bottom: 70px;
+        margin-bottom: 120px;
 
         @media (min-width: 1000px){
             display: flex;
         }
 
+    }
+
+}
+
+.feature-section{
+    .container{
+        display: flex;
+        
+
+        .btn-yellow{
+            background-color: #F9D783;
+            border: 1px solid #F9D783;
+            color: #191919;
+            text-decoration: none;
+            padding: 12px 150px;
+            font-weight: 600;
+            font-size: 16px; 
+            border-radius: 25px;
+            
+        
+            i{
+                margin-left: 8px;
+                font-size: 0.9em;
+            }
+        
+            &:hover{
+                background-color: #191919;
+                border: 1px solid #191919;
+                color: #F0EFE9;
+            }
+
+        }
+
+        .section-title{
+            text-align: left;
+            align-self: start;
+            p{
+                align-items: flex-start;
+            }
+
+            h2{
+                border: 1px solid #191919;
+                margin-right: 150px;
+                margin-bottom:30px;
+            }
+        }
+
+        .features{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            gap: 60px 140px;
+
+            article{
+                justify-self: end;
+                
+                i{
+                    font-size: 2em;
+                    margin-bottom: 30px;
+                }
+
+                h3{
+                    grid-row: 1;
+                    color: #191919;
+                     font-family: 'DM Sans', sans-serif;
+                     font-weight: 700;
+                     font-size: 22px;
+
+                }
+
+                p{
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+           
+        }
+
+        
     }
 
 }
